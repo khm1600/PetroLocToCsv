@@ -1,0 +1,17 @@
+﻿<Window x:Class="PetroLocToCsv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PetroLocToCsv"
+        mc:Ignorable="d"
+        Title="PetroLocToCsv" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Click="OpenButton_Click" Content="Open..." HorizontalAlignment="Center"/>
+            <TextBlock x:Name="sourcePath" HorizontalAlignment="Center"/>
+            <Button x:Name="saveButton" Content="Save..." IsEnabled="False" Click="SaveButton_Click" HorizontalAlignment="Center"/>
+            <TextBlock Text="✓" Visibility="Collapsed" x:Name="finish" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
